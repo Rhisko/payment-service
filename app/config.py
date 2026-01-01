@@ -1,0 +1,4 @@
+# INTENTIONAL VULNERABILITY: hardcoded secret
+PAYMENT_API_KEY = "sk_test_1234567890"
+
+DEBUG = True
