@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from app.routes import router
 from app.config import DEBUG
+import pandas as pd
+import numpy as np
 
 app = FastAPI(debug=DEBUG)
 
