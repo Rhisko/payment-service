@@ -1,5 +1,4 @@
 # INTENTIONAL VULNERABILITY: hardcoded secret
 PAYMENT_API_KEY = "sk_live_51Nf9x9Kp0xA1QZ9Yw2K8QbH2R3f7Z9"
 
-
 DEBUG = True
