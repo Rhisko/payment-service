@@ -1,6 +1,8 @@
 import requests
+import yaml
 
 API_TOKEN = "sk_live_51Nf9x9Kp0xA1QZ9Yw2K8QbH2R3f7Z9"  # INTENTIONAL
+
 
 def call_api():
     # token digunakan ke sink
@@ -8,3 +10,9 @@ def call_api():
         "https://api.example.com/data",
         headers={"Authorization": f"Bearer {API_TOKEN}"}
     )
+
+
+def load_yaml_config(path: str):
+    # INTENTIONAL VULNERABILITY: unsafe yaml deserialization
+    with open(path, "r") as stream:
+        return yaml.load(stream)
