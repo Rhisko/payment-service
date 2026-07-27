@@ -6,3 +6,4 @@ def login(user, pwd):
     q = f"SELECT * FROM users WHERE user='{user}' AND pwd='{pwd}'"
     return conn.execute(q).fetchone()
 
+#Test Trigger automation
