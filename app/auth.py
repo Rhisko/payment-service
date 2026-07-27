@@ -5,3 +5,5 @@ def login(user, pwd):
     # INTENTIONAL VULNERABILITY
     q = f"SELECT * FROM users WHERE user='{user}' AND pwd='{pwd}'"
     return conn.execute(q).fetchone()
+
+# test Trigger
